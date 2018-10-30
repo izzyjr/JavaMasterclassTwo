@@ -8,6 +8,18 @@ public class BankAccount {
     private String email;
     private String phoneNumber;
 
+    public BankAccount() {
+        System.out.println("Empty Constructor");
+    }
+
+    public BankAccount(int accountNumber, int balance, String customerName, String email, String phoneNumber) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void deposit(int deposit) {
 
         this.balance += deposit;
