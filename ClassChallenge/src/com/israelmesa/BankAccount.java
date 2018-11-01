@@ -9,15 +9,21 @@ public class BankAccount {
     private String phoneNumber;
 
     public BankAccount() {
-        System.out.println("Empty Constructor");
+        System.out.println("Constructor without parameters called");
     }
 
     public BankAccount(int accountNumber, int balance, String customerName, String email, String phoneNumber) {
+        System.out.println("Constructor with parameters called");
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;
         this.phoneNumber = phoneNumber;
+    }
+
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this(00000, 100, customerName, email, phoneNumber);
+        System.out.println("Two default parameters");
     }
 
     public void deposit(int deposit) {

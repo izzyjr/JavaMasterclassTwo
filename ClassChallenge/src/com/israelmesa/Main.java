@@ -23,5 +23,13 @@ public class Main {
         account2.withdraw(350);
 
         System.out.println("Current Balance for " + account2.getCustomerName() + " = " + account2.getBalance());
+
+        //Constructor with default parameters
+        BankAccount account3 = new BankAccount("tim", "time@gmail.com", "7259907");
+        System.out.println("Current Balance for " + account3.getCustomerName() + " = " + account3.getBalance()  + " Account Number: " +  account3.getAccountNumber());
+        account3.deposit(2500);
+        account3.withdraw(730);
+
+        System.out.println("Current Balance for " + account3.getCustomerName() + " = " + account3.getBalance());
     }
 }
