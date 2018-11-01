@@ -21,11 +21,32 @@ public class Dog extends Animal{
         System.out.println("Dog.chew called");
     }
 
+    public void walk() {
+        System.out.println("Dog.walk called");
+        super.move(5);
+    }
+
+    public void run() {
+        System.out.println("Dog.run called");
+        move(15);
+    }
+
+    public void moveLegs(int speed) {
+        System.out.println("Dog.moveLegs called");
+    }
+
     @Override
     public void eat() {
         System.out.println("Dog.eat called");
         this.chew();
         super.eat();
 
+    }
+
+    @Override
+    public void move(int speed) {
+        System.out.println("Dog.move called");
+        moveLegs(speed);
+        super.move(speed);
     }
 }
