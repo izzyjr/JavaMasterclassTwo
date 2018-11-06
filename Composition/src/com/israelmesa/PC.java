@@ -3,12 +3,12 @@ package com.israelmesa;
 public class PC {
 
     private Case theCase;
-    private Monitor monitors;
+    private Monitor monitor;
     private Motherboard motherboard;
 
     public PC(Case theCase, Monitor monitors, Motherboard motherboard) {
         this.theCase = theCase;
-        this.monitors = monitors;
+        this.monitor = monitors;
         this.motherboard = motherboard;
     }
 
@@ -16,8 +16,8 @@ public class PC {
         return theCase;
     }
 
-    public Monitor getMonitors() {
-        return monitors;
+    public Monitor getMonitor() {
+        return monitor;
     }
 
     public Motherboard getMotherboard() {
