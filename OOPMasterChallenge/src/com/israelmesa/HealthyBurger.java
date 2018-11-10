@@ -13,7 +13,7 @@ public class HealthyBurger extends BasicBurger{
 
     @Override
     public double price() {
-        double healthyModification = super.price();
+        double healthyModification = super.price() + getToppings().toppingsCost();
 
         if(avocado) {
             healthyModification += 3.00;

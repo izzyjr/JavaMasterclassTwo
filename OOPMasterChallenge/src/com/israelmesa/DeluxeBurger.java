@@ -5,25 +5,25 @@ public class DeluxeBurger extends BasicBurger{
     private boolean bacon;
     private boolean egg;
 
-    public DeluxeBurger(String name, String meat, String rollType, AddBaseToppings toppings, boolean bacon, boolean egg) {
-        super(name, meat, rollType, toppings);
+    public DeluxeBurger(String name, String meat, String rollType, boolean bacon, boolean egg) {
+        super(name, meat, rollType);
         this.bacon = bacon;
         this.egg = egg;
     }
 
     @Override
     public double price() {
-        double healthyModification = super.price();
+        double deluxeModification = super.price();
 
         if(bacon) {
-            healthyModification += 3.50;
+            deluxeModification += 3.50;
         }
         if(egg) {
-            healthyModification += 2.00;
+            deluxeModification += 2.00;
         }
 
-        System.out.println("Plus Deluxe Burger Modification: " + healthyModification);
-        return healthyModification;
+        System.out.println("Plus Deluxe Burger Modification: " + deluxeModification);
+        return deluxeModification;
     }
 
     @Override

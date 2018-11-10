@@ -15,12 +15,25 @@ public class BasicBurger {
         this.toppings = toppings;
         this.price = price;
     }
-    
+
+
+    public BasicBurger(String name, String meat, String rollType) {
+        this.name = name;
+        this.meat = meat;
+        this.rollType = rollType;
+        this.price = price;
+    }
+
     public double price() {
 
-        double finalPrice = getPrice() + toppings.toppingsCost();
-        System.out.println("Basic Burger price + Toppings: " + finalPrice);
+        double finalPrice = getPrice();
+        System.out.println("Basic Burger price: " + finalPrice);
         return finalPrice;
+    }
+
+    public void finalBasicBurgerPrice() {
+        double finalPrice = getPrice() + getToppings().toppingsCost();
+        System.out.println("Basic Burger price + Toppings: " + finalPrice);
     }
 
     public String getName() {

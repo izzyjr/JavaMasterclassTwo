@@ -12,8 +12,7 @@ public class Main {
 
         System.out.println("*************************************************************");
 
-        DeluxeBurger deluxeBurger = new DeluxeBurger("Deluxe Burger", "Beef", "Rye",
-                new AddBaseToppings(true, false, true, true), true, true);
+        DeluxeBurger deluxeBurger = new DeluxeBurger("Deluxe Burger", "Beef", "Rye", true, true);
         System.out.println("Burger: " + deluxeBurger.getName());
         deluxeBurger.price();
 
@@ -22,7 +21,6 @@ public class Main {
         BasicBurger basicBurger = new BasicBurger("Basic Burger", "Beef", "Rye",
                 new AddBaseToppings(true, false, true, true));
         System.out.println("Burger: " + basicBurger.getName());
-        basicBurger.price();
-
+        basicBurger.finalBasicBurgerPrice();
     }
 }
