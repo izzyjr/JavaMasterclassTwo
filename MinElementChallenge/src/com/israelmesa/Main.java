@@ -10,6 +10,8 @@ public class Main {
 
         System.out.println("Array lenght: ");
         int count = scanner.nextInt();
+        scanner.nextLine();
+
         int[] array = readIntegers(count);
         findMin(array);
 
@@ -21,8 +23,9 @@ public class Main {
         int[] array = new int[count];
 
         for (int i = 0; i < array.length; i++) {
-
+            System.out.println("Enter a number: ");
             array[i] = scanner.nextInt();
+            scanner.nextLine();
 
         }
 
