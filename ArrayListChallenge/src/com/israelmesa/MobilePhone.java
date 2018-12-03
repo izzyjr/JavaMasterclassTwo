@@ -21,6 +21,7 @@ public class MobilePhone {
         }
 
         if (contactPosition < 0) {
+            System.out.println(contactPosition);
             System.out.println("Name not found");
         }
 
@@ -67,7 +68,7 @@ public class MobilePhone {
     public void printMobileContactList() {
         System.out.println("You have " + getPhoneList().size() + " contacts in your Mobile Phone");
         for(int i=0; i< getPhoneList().size(); i++) {
-            System.out.println((i+1) + ". " + getPhoneList().get(i));
+            System.out.println((i+1) + ". " + getPhoneList().get(i).getName());
         }
     }
 

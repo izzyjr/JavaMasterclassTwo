@@ -72,8 +72,8 @@ public class Main {
         String newPhoneNumber = scanner.nextLine();
         mobilePhone.modifyContact(modifyingContact, newName, newPhoneNumber);
         System.out.println("Contact " + modifyingContact + " has been modified.");
-        System.out.println("New name: " + mobilePhone.getNameContact(newName));
-        System.out.println("New phone number: " + mobilePhone.getPhoneNumberContact(newPhoneNumber));
+//        System.out.println("New name: " + mobilePhone.getNameContact(newName));
+//        System.out.println("New phone number: " + mobilePhone.getPhoneNumberContact(newPhoneNumber));
     }
 
     public static void removePhoneContact() {
