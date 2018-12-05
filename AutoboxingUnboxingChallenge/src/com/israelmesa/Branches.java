@@ -4,10 +4,20 @@ import java.util.ArrayList;
 
 public class Branches {
 
+    private String cityBranch;
     private ArrayList<Customer> cutomerList;
 
-    public Branches(ArrayList<Customer> cutomerList) {
+    public Branches(String cityBranch) {
+        this.cityBranch = cityBranch;
         this.cutomerList = new ArrayList<Customer>();
+    }
+
+    public static Branches createBranch(String name) {
+        return new Branches(name);
+    }
+
+    public String getCityBranch() {
+        return cityBranch;
     }
 
     public ArrayList<Customer> getCutomerList() {
@@ -54,7 +64,7 @@ public class Branches {
     private int findCustomerByName(String customerName) {
         int position = -1;
         for (int i = 0; i < cutomerList.size(); i++) {
-            if(cutomerList.get(i).getName().equals(customerName)) {
+            if(this.cutomerList.get(i).getName().equals(customerName)) {
                 position = i;
             }
         }
