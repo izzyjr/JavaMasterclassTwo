@@ -20,6 +20,15 @@ public class Bank {
         return branchesList;
     }
 
+    public boolean createNewBranch(Branches cityBranch) {
+        if (findBranch(cityBranch) >= 0) {
+            System.out.println("Branch " + cityBranch.getCityBranch() + " Already exists.");
+            return false;
+        }
+        branchesList.add(cityBranch);
+        return true;
+    }
+
     private int findBranch(Branches branches) {
         return this.branchesList.indexOf(branches);
     }
@@ -42,11 +51,13 @@ public class Bank {
         return null;
     }
 
-    public void listCustomers() {
+    public void listBranches() {
         System.out.println("List of Branches");
         for (int i = 0; i < branchesList.size(); i++) {
             System.out.println((i + 1) + ": " + branchesList.get(i).getCityBranch());
         }
     }
+
+
 
 }

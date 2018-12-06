@@ -33,7 +33,7 @@ public class Customer {
         }
     }
 
-    public static Customer createContact(String name) {
+    public static Customer createCustomer(String name) {
         return new Customer(name);
     }
 

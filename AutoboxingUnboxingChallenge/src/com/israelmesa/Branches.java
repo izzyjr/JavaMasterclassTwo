@@ -12,8 +12,8 @@ public class Branches {
         this.cutomerList = new ArrayList<Customer>();
     }
 
-    public static Branches createBranch(String name) {
-        return new Branches(name);
+    public static Branches createBranch(String cityName) {
+        return new Branches(cityName);
     }
 
     public String getCityBranch() {
