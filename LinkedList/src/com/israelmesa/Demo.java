@@ -8,21 +8,17 @@ public class Demo {
 
     public static void main(String[] args) {
         LinkedList<String> placesToVistit = new LinkedList<String>();
-        placesToVistit.add("Sydney");
-        placesToVistit.add("Melbourne");
-        placesToVistit.add("Brisbane");
-        placesToVistit.add("Perth");
-        placesToVistit.add("Canberra");
-        placesToVistit.add("Adelaide");
-        placesToVistit.add("darwin");
-
+        addInorder(placesToVistit, "Sydney");
+        addInorder(placesToVistit, "Melbourne");
+        addInorder(placesToVistit, "Brisbane");
+        addInorder(placesToVistit, "Perth");
+        addInorder(placesToVistit, "Canberra");
+        addInorder(placesToVistit, "Adelaide");
+        addInorder(placesToVistit, "Darwin");
         printList(placesToVistit);
 
-        placesToVistit.add(1, "Alice Spring");
-        printList(placesToVistit);
+        
 
-        placesToVistit.remove(4);
-        printList(placesToVistit);
     }
 
     private static void printList(LinkedList<String> linkedList) {
@@ -52,5 +48,6 @@ public class Demo {
             }
         }
         stringListIterator.add(newCity);
+        return true;
     }
 }
