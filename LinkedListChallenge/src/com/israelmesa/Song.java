@@ -14,11 +14,12 @@ public class Song {
         return title;
     }
 
-    public Double getDuration() {
-        return duration;
+    @Override
+    public String toString() {
+        return this.title + ": " + this.duration;
     }
 
-    public static Song createSong(String title, Double duration) {
-        return new Song(title, duration);
-    }
+//    public static Song createSong(String title, Double duration) {
+//        return new Song(title, duration);
+//    }
 }
