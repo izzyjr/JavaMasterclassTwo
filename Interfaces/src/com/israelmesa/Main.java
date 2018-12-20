@@ -11,6 +11,13 @@ public class Main {
         timsPhone.callPhone(1234567);
         timsPhone.answer();
 
+        System.out.println("**************************************************");
+
+        timsPhone = new MobilePhone(2345671);
+//        timsPhone.powerOn();
+        timsPhone.callPhone(2345671);
+        timsPhone.answer();
+
 
     }
 }
