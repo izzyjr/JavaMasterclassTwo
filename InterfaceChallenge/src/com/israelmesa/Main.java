@@ -15,10 +15,15 @@ public class Main {
         System.out.println(tim);
         tim.setWeapon("StormBringer");
         saveObjects(tim);
-        loadObject(tim);
-        System.out.println(tim);
+//        loadObject(tim);
+//        System.out.println(tim);
 
+        System.out.println("******************************************************®");
 
+        ISaveable wereWolf = new Monster("Werewolf", 20, 40);
+//        System.out.println(((Monster) wereWolf).getStrength());
+        System.out.println(wereWolf);
+        saveObjects(wereWolf);
 
 
     }
